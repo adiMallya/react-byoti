@@ -11,7 +11,7 @@ const NavContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 0.625rem 2rem;
+  padding: 0.625rem 1rem;
 
   background-color: ${({ theme }) => theme.body};
   color: ${({ theme }) => theme.text};
