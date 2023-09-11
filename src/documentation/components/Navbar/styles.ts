@@ -99,6 +99,7 @@ const NavLinks = styled.ul<{ collapse?: boolean }>`
     flex-direction: row;
     align-items: center;
     width: 100%;
+    height: fit-content;
     background-color: ${({ theme }) => theme.body};
   }
 
@@ -114,7 +115,7 @@ const NavLinks = styled.ul<{ collapse?: boolean }>`
       height: 100vh;
       box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 5%);
 
-      transition: 0.3s ease;
+      transition: 0.2s ease;
     `}
 `;
 
