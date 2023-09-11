@@ -1,0 +1,34 @@
+[
+    {
+        "menuItem": "Alert",
+        "route": "alert"
+    },
+    {
+        "menuItem": "Avatar",
+        "route": "avatar"
+    },
+    {
+        "menuItem": "Badge",
+        "route": "badge"
+    },
+    {
+        "menuItem": "Button",
+        "route": "button"
+    },
+    {
+        "menuItem": "Card",
+        "route": "card"
+    },
+    {
+        "menuItem": "Heading",
+        "route": "heading"
+    },
+    {
+        "menuItem": "Typography",
+        "route": "typography"
+    },
+    {
+        "menuItem": "Image",
+        "route": "image"
+    }
+]
