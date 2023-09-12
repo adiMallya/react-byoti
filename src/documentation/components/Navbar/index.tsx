@@ -5,7 +5,7 @@ import * as S from "./styles";
 import brandLogo from "src/assets/logo.png";
 
 export const Navbar = (): JSX.Element => {
-  const [collapse, setCollapse] = useState<boolean>(false);
+  const [sidebar, setSidebar] = useState<boolean>(false);
 
   return (
     <S.NavContainer aria-label="navbar">
@@ -13,15 +13,15 @@ export const Navbar = (): JSX.Element => {
         <S.NavToggler
           aria-label="toggler"
           role="button"
-          collapse={collapse}
-          onClick={() => setCollapse(!collapse)}
+          sidebar={sidebar}
+          onClick={() => setSidebar(!sidebar)}
         >
           <div className="line"></div>
           <div className="line"></div>
           <div className="line"></div>
         </S.NavToggler>
 
-        <S.NavLinks collapse={collapse}>
+        <S.NavLinks sidebar={sidebar}>
           <li>
             <S.NavBrand aria-label="brand">
               <img src={brandLogo} alt="brand-byoti" />

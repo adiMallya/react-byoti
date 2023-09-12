@@ -25,7 +25,7 @@ const NavSection = styled.div`
   align-items: center;
 `;
 
-const NavToggler = styled.div<{ collapse?: boolean }>`
+const NavToggler = styled.div<{ sidebar?: boolean }>`
   padding: 0 0.625rem;
 
   position: fixed;
@@ -39,8 +39,8 @@ const NavToggler = styled.div<{ collapse?: boolean }>`
     margin: 0.313rem 0;
   }
 
-  ${({ collapse }) =>
-    collapse &&
+  ${({ sidebar }) =>
+    sidebar &&
     css`
       position: absolute;
       left: calc(50% - 2.5rem - 24px);
@@ -83,7 +83,7 @@ const NavBrand = styled.div`
   }
 `;
 
-const NavLinks = styled.ul<{ collapse?: boolean }>`
+const NavLinks = styled.ul<{ sidebar?: boolean }>`
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
@@ -103,8 +103,8 @@ const NavLinks = styled.ul<{ collapse?: boolean }>`
     background-color: ${({ theme }) => theme.body};
   }
 
-  ${({ collapse }) =>
-    collapse &&
+  ${({ sidebar }) =>
+    sidebar &&
     css`
       display: block;
       position: fixed;
