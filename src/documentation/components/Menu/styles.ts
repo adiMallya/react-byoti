@@ -8,13 +8,12 @@ const MenuContainer = styled.div<{ drop?: boolean }>`
   top: 0rem;
   height: 3.5rem;
   overflow-y: hidden;
-  z-index: 3;
   background-color: ${({ theme }) => theme.secondary};
   box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 5%);
 
   ${({ drop }) =>
-        drop &&
-        css`
+    drop &&
+    css`
       height: 100vh;
     `}
 
@@ -53,8 +52,8 @@ const DropdownIcon = styled(FontAwesomeIcon) <{ drop?: boolean }>`
   transition: 0.2s ease;
 
   ${({ drop }) =>
-        drop &&
-        css`
+    drop &&
+    css`
       transform: rotate(180deg);
     `}
 `;
@@ -70,8 +69,8 @@ const MenuLinks = styled.ul<{ drop?: boolean }>`
   }
 
   ${({ drop }) =>
-        drop &&
-        css`
+    drop &&
+    css`
       display: block;
       overflow-y: auto;
       width: 100%;
