@@ -48,28 +48,13 @@ button:focus {
   box-shadow: none !important;
 }
 
-.grid-pagelayout{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: 
-      'header header header header header'
-      'sidebar main main main main'
-      'sidebar main main main main'
-      'sidebar main main main main';
-  margin-bottom: 1.5rem;
-}
-
 h2 {
   padding-top: 1rem;
+  font-size: 2rem;
 }
 
 hr {
   margin: 3rem 0 2rem;
-}
-
-.spacer {
-  height: 2rem;
-  width: 100%;
 }
 
 @media screen and (max-width: 1024px){
@@ -79,15 +64,6 @@ hr {
 
   main{
     padding: 1rem 1.625rem;
-  }
-
-  .grid-pagelayout{
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-        'header'
-        'sidebar'
-        'main';
   }
 }
 `;
