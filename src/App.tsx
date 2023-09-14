@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
-import { Home } from "src/pages";
+import { Home, AlertDoc } from "src/pages";
 import { GlobalStyles, lightTheme, darkTheme } from "./styles";
 
 function App(): JSX.Element {
@@ -15,7 +15,8 @@ function App(): JSX.Element {
     <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>
       <GlobalStyles />
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/docs/alert" element={<AlertDoc/>}/>
       </Routes>
     </ThemeProvider>
   );
