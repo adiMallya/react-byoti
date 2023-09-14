@@ -23,7 +23,7 @@ const PageLayout = styled.div`
 const MainContent = styled.main`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 `;
 
 export { PageLayout, MainContent };
