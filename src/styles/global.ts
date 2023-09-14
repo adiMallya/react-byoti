@@ -48,10 +48,9 @@ button:focus {
   box-shadow: none !important;
 }
 
-h2 {
-  padding-top: 1rem;
-  font-size: 2rem;
-}
+h1, h2, h3, h4{
+  font-weight: 500;
+} 
 
 hr {
   margin: 3rem 0 2rem;
