@@ -1,0 +1,42 @@
+{
+    "title": "Alerts",
+    "description": "Alerts provide contextual feedback messages for typical user actions.",
+    "subsection": [
+        {
+            "title": "Variants",
+            "description": "To use just pass the type prop with the message prop, to be displayed inside the alert. This affects the color scheme. Alert supports primary, secondary, success, danger and warning types.",
+            "keywords": [
+                "type",
+                "message",
+                "primary",
+                "secondary",
+                "success",
+                "danger",
+                "warning"
+            ],
+            "examples": [
+                {
+                    "type": "primary",
+                    "message": "A primary alert example with a text"
+                },
+                {
+                    "type": "secondary",
+                    "message": "A secondary alert example with a text"
+                },
+                {
+                    "type": "success",
+                    "message": "A success alert example with a text"
+                },
+                {
+                    "type": "danger",
+                    "message": "A danger alert example with a text"
+                },
+                {
+                    "type": "warning",
+                    "message": "A warning alert example with a text"
+                }
+            ],
+            "code": ""
+        }
+    ]
+}
