@@ -5,9 +5,10 @@ const MenuContainer = styled.div<{ drop?: boolean }>`
   grid-area: sidebar;
 
   position: sticky;
-  top: 0rem;
+  top: 0;
   height: 3.5rem;
   overflow-y: hidden;
+  z-index: 5;
   background-color: ${({ theme }) => theme.secondary};
   box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 5%);
 
