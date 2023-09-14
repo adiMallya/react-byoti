@@ -19,7 +19,7 @@ export const Menu = (): JSX.Element => {
       <S.MenuLinks aria-label="doc-navigation">
         {menuList.map(({ menuItem, route }) => (
           <li key={menuItem}>
-            <Link to={`/docs/${route}`}>{menuItem}</Link>{" "}
+            <Link to={`/docs/${route}`} onClick={() => setDrop(false)}>{menuItem}</Link>{" "}
           </li>
         ))}
       </S.MenuLinks>

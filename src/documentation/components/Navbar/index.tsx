@@ -28,11 +28,11 @@ export const Navbar = (): JSX.Element => {
               <span>byoti</span>
             </S.NavBrand>
           </li>
-          <li aria-label="navlink">
+          <li aria-label="navlink" onClick={() => setSidebar(false)}>
             <NavLink to={"/"}>Home</NavLink>
           </li>
-          <li aria-label="navlink">
-            <NavLink to={"/docs"}>Documentation</NavLink>
+          <li aria-label="navlink" onClick={() => setSidebar(false)}>
+            <NavLink to={"/docs/alert"}>Documentation</NavLink>
           </li>
         </S.NavLinks>
       </S.NavSection>
