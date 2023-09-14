@@ -19,6 +19,7 @@ body {
     color: ${({ theme }) => theme.text};
     transition: all 0.3s ease-in-out;
     font-family: 'Montserrat',sans-serif;
+    line-height: 1.5;
     word-wrap: break-word;
 }
 
@@ -26,7 +27,8 @@ main {
   grid-area: main;
   width: 100%;
   max-width: 100vw;
-  padding: 1rem 3rem;
+  margin: 1rem auto;
+  padding: 1rem;
 }
 
 ul {
