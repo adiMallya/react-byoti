@@ -8,7 +8,7 @@ const MenuContainer = styled.div<{ drop?: boolean }>`
   top: 0;
   height: 3.5rem;
   overflow-y: hidden;
-  z-index: 5;
+  z-index: 4;
   background-color: ${({ theme }) => theme.secondary};
   box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 5%);
 
@@ -19,8 +19,8 @@ const MenuContainer = styled.div<{ drop?: boolean }>`
     `}
 
   @media screen and (min-width: 1024px) {
-    width: fit-content;
-    height: calc(100vh - 2rem);
+    max-width: 250px;
+    height: 80vh;
     padding: 1rem;
     overflow-y: auto;
   }
@@ -66,7 +66,7 @@ const MenuLinks = styled.ul<{ drop?: boolean }>`
   padding: 0 1rem;
 
   li {
-    padding: 0.625rem;
+    padding: 0.625rem 0 0 0.625rem;
   }
 
   ${({ drop }) =>
