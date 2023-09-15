@@ -20,23 +20,22 @@ const ComponentDisplay = styled.article`
   border-radius: 0.3rem;
   width: 100%;
 `;
-
+//can be removed
 const CodeDisplay = styled.div`
   box-sizing: border-box;
   width: 100%;
   max-height: 300px;
   overflow: auto;
   margin: 2rem 0;
-  padding: 1rem 0;
-  background-color: ${({ theme }) => theme.secondary};
+  padding: 0.25rem 0;
+  /* background-color: ${({ theme }) => theme.secondary}; */
 `;
 
 const Code = styled.code`
   width: 100%;
-  border: none;
-
   iframe {
-    border: 0;
+    width: inherit;
+    border: none;
     transform: scale(1);
     overflow: hidden;
   }
