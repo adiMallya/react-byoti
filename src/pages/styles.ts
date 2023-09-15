@@ -33,6 +33,8 @@ const CodeDisplay = styled.div`
 
 const Code = styled.code`
   width: 100%;
+  border: 2px solid ${({ theme }) => theme.secondary};
+  border-radius: 0.3rem;
   iframe {
     width: inherit;
     border: none;

@@ -18,33 +18,32 @@ export const AlertDoc = (): JSX.Element => {
         <p>{doc.description}</p>
       </S.Section>
       <S.Section>
-        {doc.subsection.map(({ title, description, keywords, examples, code }) => (
-          <>
-            {title && <h3>{title}</h3>}
-            <p>
-              {parse(
-                description
-                  .split(" ")
-                  .map((word) =>
-                    keywords.includes(word)
-                      ? `<span aria-label="component-props">${word}</span>`
-                      : word
-                  )
-                  .join(" ")
-              )}
-            </p>
-            <S.ComponentDisplay>
-              {examples.map(({ type, message }) => (
-                <Alert type={type} message={message} />
-              ))}
-            </S.ComponentDisplay>
-            <S.CodeDisplay>
-              <S.Code>
-                {parse(code)}
-              </S.Code>
-            </S.CodeDisplay>
-          </>
-        ))}
+        {doc.subsection.map(
+          ({ title, description, keywords, examples, code }) => (
+            <>
+              {title && <h3>{title}</h3>}
+              <p>
+                {parse(
+                  description
+                    .split(" ")
+                    .map((word) =>
+                      keywords.includes(word)
+                        ? `<span aria-label="component-props">${word}</span>`
+                        : word
+                    )
+                    .join(" ")
+                )}
+              </p>
+              <S.ComponentDisplay>
+                {examples.map(({ type, message }) => (
+                  <Alert type={type} message={message} />
+                ))}
+              </S.ComponentDisplay>
+              <h4>Usage</h4>
+              <S.Code>{parse(code)}</S.Code>
+            </>
+          )
+        )}
       </S.Section>
     </DocLayout>
   );
