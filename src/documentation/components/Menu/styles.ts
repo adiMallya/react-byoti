@@ -20,7 +20,7 @@ const MenuContainer = styled.div<{ drop?: boolean }>`
 
   @media screen and (min-width: 1024px) {
     max-width: 250px;
-    height: 80vh;
+    height: 70vh;
     padding: 1rem;
     overflow-y: auto;
   }
