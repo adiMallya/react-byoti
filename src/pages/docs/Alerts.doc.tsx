@@ -18,7 +18,7 @@ export const AlertDoc = (): JSX.Element => {
         <p>{doc.description}</p>
       </S.Section>
       <S.Section>
-        {doc.subsection.map(({ title, description, keywords, examples }) => (
+        {doc.subsection.map(({ title, description, keywords, examples, code }) => (
           <>
             {title && <h3>{title}</h3>}
             <p>
@@ -34,13 +34,15 @@ export const AlertDoc = (): JSX.Element => {
               )}
             </p>
             <S.ComponentDisplay>
-              {examples.map(
-                ({ type, message })  => (
-                  <Alert type={type} message={message} />
-                )
-              )}
+              {examples.map(({ type, message }) => (
+                <Alert type={type} message={message} />
+              ))}
             </S.ComponentDisplay>
-            <S.CodeDisplay></S.CodeDisplay>
+            <S.CodeDisplay>
+              <S.Code>
+                {parse(code)}
+              </S.Code>
+            </S.CodeDisplay>
           </>
         ))}
       </S.Section>
