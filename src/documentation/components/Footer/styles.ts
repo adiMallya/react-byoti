@@ -11,6 +11,7 @@ const FooterContainer = styled.footer`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  grid-area: footer;
 `;
 
 const FooterHeader = styled.div`

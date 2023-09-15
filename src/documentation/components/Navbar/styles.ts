@@ -27,9 +27,6 @@ const NavSection = styled.div`
 
 const NavToggler = styled.div<{ sidebar?: boolean }>`
   padding: 0 0.625rem;
-
-  position: fixed;
-  z-index: 5;
   cursor: pointer;
 
   .line {
