@@ -21,6 +21,7 @@ body {
     font-family: 'Montserrat',sans-serif;
     line-height: 1.5;
     word-wrap: break-word;
+    user-select: none;
 }
 
 main {
