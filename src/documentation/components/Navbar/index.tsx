@@ -5,7 +5,7 @@ import * as S from "./styles";
 import brandLogo from "src/assets/logo.png";
 
 export const Navbar = (): JSX.Element => {
-  const [sidebar, setSidebar] = useState<boolean>(false);
+  const [show, setShow] = useState<boolean>(false);
 
   return (
     <S.NavContainer aria-label="navbar">
@@ -13,25 +13,25 @@ export const Navbar = (): JSX.Element => {
         <S.NavToggler
           aria-label="toggler"
           role="button"
-          sidebar={sidebar}
-          onClick={() => setSidebar(!sidebar)}
+          sidebar={show ? 'show' : 'hide'}
+          onClick={() => setShow(!show)}
         >
           <div className="line"></div>
           <div className="line"></div>
           <div className="line"></div>
         </S.NavToggler>
 
-        <S.NavLinks sidebar={sidebar}>
+        <S.NavLinks sidebar={show ? 'show' : 'hide'}>
           <li>
             <S.NavBrand aria-label="brand">
               <img src={brandLogo} alt="brand-byoti" />
               <span>byoti</span>
             </S.NavBrand>
           </li>
-          <li aria-label="navlink" onClick={() => setSidebar(false)}>
+          <li aria-label="navlink" onClick={() => setShow(false)}>
             <NavLink to={"/"}>Home</NavLink>
           </li>
-          <li aria-label="navlink" onClick={() => setSidebar(false)}>
+          <li aria-label="navlink" onClick={() => setShow(false)}>
             <NavLink to={"/docs/alert"}>Documentation</NavLink>
           </li>
         </S.NavLinks>

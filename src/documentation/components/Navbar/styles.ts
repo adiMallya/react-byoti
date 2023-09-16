@@ -1,5 +1,9 @@
 import styled, { css } from "styled-components";
 
+interface PropType {
+  sidebar?: 'show' | 'hide'
+}
+
 const NavContainer = styled.nav`
   grid-area: header;
   min-height: 10vh;
@@ -25,7 +29,7 @@ const NavSection = styled.div`
   align-items: center;
 `;
 
-const NavToggler = styled.div<{ sidebar?: boolean }>`
+const NavToggler = styled.div<PropType>`
   padding: 0 0.625rem;
   cursor: pointer;
 
@@ -37,7 +41,7 @@ const NavToggler = styled.div<{ sidebar?: boolean }>`
   }
 
   ${({ sidebar }) =>
-    sidebar &&
+    sidebar === 'show' &&
     css`
       position: absolute;
       left: calc(50% - 2.5rem - 24px);
@@ -80,7 +84,7 @@ const NavBrand = styled.div`
   }
 `;
 
-const NavLinks = styled.ul<{ sidebar?: boolean }>`
+const NavLinks = styled.ul<PropType>`
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
@@ -101,7 +105,7 @@ const NavLinks = styled.ul<{ sidebar?: boolean }>`
   }
 
   ${({ sidebar }) =>
-    sidebar &&
+    sidebar === 'show' &&
     css`
       display: block;
       position: fixed;
