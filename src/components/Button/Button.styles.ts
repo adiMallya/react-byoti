@@ -38,6 +38,7 @@ const setVariant = (variant: 'solid' | 'outline' | 'link' | 'icon' | 'iconText',
             `;
         case 'link':
             return css`
+                background-color: transparent;
                 text-decoration: underline;
                 text-underline-position: below;
                 text-decoration-color: ${color};
