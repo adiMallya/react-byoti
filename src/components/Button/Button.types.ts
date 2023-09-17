@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, ReactNode } from "react";
+import { ButtonHTMLAttributes, HtmlHTMLAttributes, ReactNode } from "react";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     label?: string,
@@ -7,4 +7,10 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     variant?: 'solid' | 'outline' | 'link' | 'icon' | 'iconText',
     isDisabled?: boolean,
     children?: ReactNode
+}
+
+export interface ToggleProps extends HtmlHTMLAttributes<HTMLElement> {
+    color?: string,
+    isDisabled?: boolean,
+    toggle?: () => void
 }

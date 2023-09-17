@@ -1,11 +1,16 @@
-import { ButtonProps } from "./Button.types";
-import { ButtonContainer } from "./Button.styles";
+import { ButtonProps, ToggleProps } from "./Button.types";
+import {
+  ButtonContainer,
+  ToggleContainer,
+  ButtonState,
+  ButtonSlider,
+} from "./Button.styles";
 
 export const Button: React.FC<ButtonProps> = ({
   children,
   ...rest
 }): JSX.Element => {
-    const { label } = rest;
+  const { label } = rest;
   return (
     <ButtonContainer {...rest}>
       <span aria-label="button-label">
@@ -13,5 +18,15 @@ export const Button: React.FC<ButtonProps> = ({
         <span>{label}</span>
       </span>
     </ButtonContainer>
+  );
+};
+
+export const ToggleSwitch: React.FC<ToggleProps> = (props): JSX.Element => {
+  const { color, toggle, ...rest } = props;
+  return (
+    <ToggleContainer {...rest} aria-label="toggle-switch">
+      <ButtonState type="checkbox" onChange={toggle} {...rest} />
+      <ButtonSlider color={color} />
+    </ToggleContainer>
   );
 };
