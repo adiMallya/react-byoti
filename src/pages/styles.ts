@@ -22,17 +22,6 @@ const ComponentDisplay = styled.article<{ column?: boolean }>`
   width: 100%;
 `;
 
-//can be removed
-const CodeDisplay = styled.div`
-  box-sizing: border-box;
-  width: 100%;
-  max-height: 300px;
-  overflow: auto;
-  margin: 2rem 0;
-  padding: 0.25rem 0;
-  /* background-color: ${({ theme }) => theme.secondary}; */
-`;
-
 const Code = styled.code`
   width: 100%;
   border: 2px solid ${({ theme }) => theme.secondary};
@@ -45,4 +34,4 @@ const Code = styled.code`
   }
 `;
 
-export { Section, ComponentDisplay, CodeDisplay, Code };
+export { Section, ComponentDisplay, Code };

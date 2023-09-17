@@ -4,7 +4,7 @@ import { DocLayout } from "src/documentation/components";
 import doc from "src/documentation/configs/button.doc.json";
 
 import * as S from "src/pages/styles";
-import { Button, ToggleSwitch, FloatingActionButton } from "src/components";
+import { Button, ToggleSwitch } from "src/components";
 
 export const ButtonDoc = (): JSX.Element => {
   useEffect(() => {
@@ -71,7 +71,7 @@ export const ButtonDoc = (): JSX.Element => {
         ))}
       {doc.subsection
         .slice(-1)
-        .map(({ title, description, keywords, examples, code }, index) => (
+        .map(({ title, description, keywords, code }, index) => (
           <S.Section key={index}>
             {title && <h3>{title}</h3>}
             <p>
@@ -86,11 +86,6 @@ export const ButtonDoc = (): JSX.Element => {
                   .join(" ")
               )}
             </p>
-            <S.ComponentDisplay>
-              {examples.map((prop, index) => (
-                <FloatingActionButton {...prop} key={index} >X</FloatingActionButton>
-              ))}
-            </S.ComponentDisplay>
             <h4>Usage</h4>
             <S.Code>{parse(code)}</S.Code>
           </S.Section>
