@@ -91,7 +91,7 @@
         },
         {
             "title": "Floating Action Button",
-            "description": "Floating action button triggers the primary action in you app's UI. Customize them to your need by adding the font-awesome icon. This button will be fied to right-bottom corner.",
+            "description": "Floating action button triggers the primary action in you app's UI. Customize them to your need by adding the font-awesome icon. This button will be floating on right-bottom corner.",
             "keywords": [],
             "examples": [
                 {
