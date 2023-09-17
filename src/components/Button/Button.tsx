@@ -4,6 +4,7 @@ import {
   ToggleContainer,
   ButtonState,
   ButtonSlider,
+  FloatingButton,
 } from "./Button.styles";
 
 export const Button: React.FC<ButtonProps> = ({
@@ -29,4 +30,11 @@ export const ToggleSwitch: React.FC<ToggleProps> = (props): JSX.Element => {
       <ButtonSlider color={color} />
     </ToggleContainer>
   );
+};
+
+export const FloatingActionButton: React.FC<ButtonProps> = ({
+  children,
+  ...rest
+}): JSX.Element => {
+  return <FloatingButton {...rest}>{children}</FloatingButton>;
 };

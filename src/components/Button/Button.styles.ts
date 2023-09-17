@@ -74,7 +74,7 @@ const setVariant = (
   }
 };
 
-export const ButtonContainer = styled.button<ButtonProps>`
+const ButtonContainer = styled.button<ButtonProps>`
   display: inline-block;
   background-color: ${({ color }) => color || "black"};
   border: none;
@@ -108,7 +108,7 @@ export const ButtonContainer = styled.button<ButtonProps>`
     `}
 `;
 //Toggle switch
-export const ToggleContainer = styled.label<ToggleProps>`
+const ToggleContainer = styled.label<ToggleProps>`
   position: relative;
   display: block;
   width: 60px;
@@ -123,13 +123,13 @@ export const ToggleContainer = styled.label<ToggleProps>`
     `}
 `;
 
-export const ButtonState = styled.input<InputHTMLAttributes<HTMLInputElement>>`
+const ButtonState = styled.input<InputHTMLAttributes<HTMLInputElement>>`
   opacity: 0;
   height: 0;
   width: 0;
 `;
 
-export const ButtonSlider = styled.span<ToggleProps>`
+const ButtonSlider = styled.span<ToggleProps>`
   border-radius: 34px;
   position: absolute;
   top: 0;
@@ -161,3 +161,16 @@ export const ButtonSlider = styled.span<ToggleProps>`
     transform: translateX(26px);
   }
 `;
+//Floating action
+const FloatingButton = styled(ButtonContainer)`
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 4;
+`;
+
+export { ButtonContainer, ToggleContainer, ButtonState, ButtonSlider, FloatingButton };
