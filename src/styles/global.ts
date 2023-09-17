@@ -17,7 +17,7 @@ html:focus-within {
 body {
     background-color: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    transition: all 0.3s ease-in-out;
+    transition: 0.3s ease;
     font-family: 'Montserrat',sans-serif;
     line-height: 1.5;
     word-wrap: break-word;
