@@ -56,6 +56,7 @@ const setVariant = (
     case "icon":
       return css`
         color: ${color};
+        background-color: transparent;
       `;
     case "iconText":
       return css`
