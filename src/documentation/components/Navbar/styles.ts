@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface PropType {
   sidebar?: 'show' | 'hide'
@@ -27,6 +28,7 @@ const NavContainer = styled.nav`
 const NavSection = styled.div`
   display: flex;
   align-items: center;
+  gap: 1.75rem;
 `;
 
 const NavToggler = styled.div<PropType>`
@@ -120,4 +122,9 @@ const NavLinks = styled.ul<PropType>`
     `}
 `;
 
-export { NavContainer, NavSection, NavBrand, NavLinks, NavToggler };
+const NavIcon = styled(FontAwesomeIcon)`
+  color: ${({ theme }) => theme.text};
+  font-size: 1.75em;
+`;
+
+export { NavContainer, NavSection, NavBrand, NavLinks, NavToggler, NavIcon };
