@@ -59,6 +59,46 @@
                 }
             ],
             "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CButton%2520variant%253D%2522solid%2522%2520color%253D%2522%2523BE185D%2522%2520label%253D%2522Solid%2522%252F%253E%250A%253CButton%2520variant%253D%2522outline%2522%2520color%253D%2522%2523BE185D%2522%2520label%253D%2522Outline%2522%252F%253E%250A%253CButton%2520variant%253D%2522link%2522%2520color%253D%2522%2523BE185D%2522%2520label%253D%2522Click%2520here%2522%252F%253E%250A%253CButton%2520variant%253D%2522icon%2522%2520color%253D%2522%2523BE185D%2522%253E%257Bicon%257D%253CButton%253E%250A%253CButton%2520variant%253D%2522iconText%2522%2520color%253D%2522%2523BE185D%2522%2520label%253D%2522Add%2520to%2520Cart%2522%253E%257Bicon%257D%253CButton%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
+        },
+        {
+            "title": "Disable Button",
+            "description": "Make buttons look inactive by adding the prop isDisabled .",
+            "keywords": [
+                "isDisabled"
+            ],
+            "examples": [
+                {
+                    "size": "lg",
+                    "label": "Click here",
+                    "color": "#BE185D",
+                    "isDisabled": true
+                }
+            ],
+            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CButton%2520variant%253D%2522solid%2522%2520color%253D%2522%2523BE185D%2522%2520label%253D%2522Click%2520here%2522%2520isDisabled%252F%253E%250A' sandbox='allow-scripts allow-same-origin'></iframe>"
+        },
+        {
+            "title": "Toggle Switch",
+            "description": "Use toggle-button to switch between two states. Button can be used to switch the theme of your page. Pass the event handler to the toggle prop, to control the state.",
+            "keywords": [
+                "toggle"
+            ],
+            "examples": [
+                {
+                    "color": "#BE185D"
+                }
+            ],
+            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CToggleSwitch%2520color%253D%2522%2523BE185D%2522%2520toggle%253D%257BeventHandler%257D%252F%253E%250A' sandbox='allow-scripts allow-same-origin'></iframe>"
+        },
+        {
+            "title": "Floating Action Button",
+            "description": "Floating action button triggers the primary action in you app's UI. Customize them to your need by adding the font-awesome icon. This button will be fied to right-bottom corner.",
+            "keywords": [],
+            "examples": [
+                {
+                    "color": "#BE185D"
+                }
+            ],
+            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CFloatingActionButton%2520color%253D%2522%2523BE185%2522%253E%257B%2522X%2522%257D%253C%252FFloatingActionButton%253E%250A' sandbox='allow-scripts allow-same-origin'></iframe>"
         }
     ]
 }
