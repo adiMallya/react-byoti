@@ -23,10 +23,10 @@ export const Button: React.FC<ButtonProps> = ({
 };
 
 export const ToggleSwitch: React.FC<ToggleProps> = (props): JSX.Element => {
-  const { color, toggle, ...rest } = props;
+  const { color, toggle, state, ...rest } = props;
   return (
     <ToggleContainer {...rest} aria-label="toggle-switch">
-      <ButtonState type="checkbox" onChange={toggle} {...rest} />
+      <ButtonState type="checkbox" onChange={toggle}  checked={state === 'on'} {...rest} />
       <ButtonSlider color={color} />
     </ToggleContainer>
   );

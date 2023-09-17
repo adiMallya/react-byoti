@@ -12,5 +12,6 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 export interface ToggleProps extends HtmlHTMLAttributes<HTMLElement> {
     color?: string,
     isDisabled?: boolean,
+    state?: 'on' | 'off',
     toggle?: () => void
 }
