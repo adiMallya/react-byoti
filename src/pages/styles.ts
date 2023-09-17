@@ -11,24 +11,15 @@ const Section = styled.section`
   }
 `;
 
-const ComponentDisplay = styled.article`
+const ComponentDisplay = styled.article<{ column?: boolean }>`
   display: flex;
-  flex-direction: column;
+  flex-direction: ${({ column }) => column && 'column'};
+  gap: 1rem;
   border: 1px solid ${({ theme }) => theme.body};
   padding: 0.625rem 1rem;
   background-color: ${({ theme }) => theme.secondary};
   border-radius: 0.3rem;
   width: 100%;
-`;
-//can be removed
-const CodeDisplay = styled.div`
-  box-sizing: border-box;
-  width: 100%;
-  max-height: 300px;
-  overflow: auto;
-  margin: 2rem 0;
-  padding: 0.25rem 0;
-  /* background-color: ${({ theme }) => theme.secondary}; */
 `;
 
 const Code = styled.code`
@@ -43,4 +34,4 @@ const Code = styled.code`
   }
 `;
 
-export { Section, ComponentDisplay, CodeDisplay, Code };
+export { Section, ComponentDisplay, Code };

@@ -1,7 +1,11 @@
 import styled, { css } from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const MenuContainer = styled.div<{ drop?: boolean }>`
+interface PropType {
+  dropdown?: 'drop' | 'collapse'
+}
+
+const MenuContainer = styled.div<PropType>`
   grid-area: sidebar;
 
   position: sticky;
@@ -12,8 +16,8 @@ const MenuContainer = styled.div<{ drop?: boolean }>`
   background-color: ${({ theme }) => theme.secondary};
   box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 5%);
 
-  ${({ drop }) =>
-    drop &&
+  ${({ dropdown }) =>
+    dropdown === 'drop' &&
     css`
       height: 100vh;
     `}
@@ -48,18 +52,18 @@ const Dropdown = styled.div`
   }
 `;
 
-const DropdownIcon = styled(FontAwesomeIcon) <{ drop?: boolean }>`
+const DropdownIcon = styled(FontAwesomeIcon) <PropType>`
   color: ${({ theme }) => theme.text};
   transition: 0.2s ease;
 
-  ${({ drop }) =>
-    drop &&
+  ${({ dropdown }) =>
+    dropdown === 'drop' &&
     css`
       transform: rotate(180deg);
     `}
 `;
 
-const MenuLinks = styled.ul<{ drop?: boolean }>`
+const MenuLinks = styled.ul<PropType>`
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -69,8 +73,8 @@ const MenuLinks = styled.ul<{ drop?: boolean }>`
     padding: 0.625rem 0 0 0.625rem;
   }
 
-  ${({ drop }) =>
-    drop &&
+  ${({ dropdown }) =>
+    dropdown === 'drop' &&
     css`
       display: block;
       overflow-y: auto;

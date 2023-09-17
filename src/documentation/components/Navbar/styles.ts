@@ -1,4 +1,9 @@
 import styled, { css } from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+interface PropType {
+  sidebar?: 'show' | 'hide'
+}
 
 const NavContainer = styled.nav`
   grid-area: header;
@@ -23,9 +28,10 @@ const NavContainer = styled.nav`
 const NavSection = styled.div`
   display: flex;
   align-items: center;
+  gap: 1.75rem;
 `;
 
-const NavToggler = styled.div<{ sidebar?: boolean }>`
+const NavToggler = styled.div<PropType>`
   padding: 0 0.625rem;
   cursor: pointer;
 
@@ -37,7 +43,7 @@ const NavToggler = styled.div<{ sidebar?: boolean }>`
   }
 
   ${({ sidebar }) =>
-    sidebar &&
+    sidebar === 'show' &&
     css`
       position: absolute;
       left: calc(50% - 2.5rem - 24px);
@@ -80,7 +86,7 @@ const NavBrand = styled.div`
   }
 `;
 
-const NavLinks = styled.ul<{ sidebar?: boolean }>`
+const NavLinks = styled.ul<PropType>`
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
@@ -101,7 +107,7 @@ const NavLinks = styled.ul<{ sidebar?: boolean }>`
   }
 
   ${({ sidebar }) =>
-    sidebar &&
+    sidebar === 'show' &&
     css`
       display: block;
       position: fixed;
@@ -116,4 +122,9 @@ const NavLinks = styled.ul<{ sidebar?: boolean }>`
     `}
 `;
 
-export { NavContainer, NavSection, NavBrand, NavLinks, NavToggler };
+const NavIcon = styled(FontAwesomeIcon)`
+  color: ${({ theme }) => theme.text};
+  font-size: 1.75em;
+`;
+
+export { NavContainer, NavSection, NavBrand, NavLinks, NavToggler, NavIcon };
