@@ -1,0 +1,63 @@
+{
+    "title": "Avatar",
+    "description": "Avatar component represent user profiles, to display profile picture or initials.",
+    "subsection": [
+        {
+            "title": "Avatar sizes",
+            "description": "Change the value of the size prop to create avatars of desired size. Avatar comes in 4 sizes - xs , sm , md and lg .",
+            "keywords": [
+                "size",
+                "xs",
+                "sm",
+                "md",
+                "lg"
+            ],
+            "examples": [
+                {
+                    "size": "xs",
+                    "src": "https://res.cloudinary.com/dtaztriby/image/upload/v1699188234/react-byoti/avatar-4_hxqgo5.png",
+                    "name": "Don Cheadle"
+                },
+                {
+                    "size": "sm",
+                    "src": "https://res.cloudinary.com/dtaztriby/image/upload/v1699188234/react-byoti/avatar-3_zg0jka.png",
+                    "name": "Kylie Walker"
+                },
+                {
+                    "size": "md",
+                    "src": "https://res.cloudinary.com/dtaztriby/image/upload/v1699188234/react-byoti/avatar-2_hgzg9i.png",
+                    "name": "Mathew Perry"
+                },
+                {
+                    "size": "lg",
+                    "src": "https://res.cloudinary.com/dtaztriby/image/upload/v1699188234/react-byoti/avatar-1_eikstn.png",
+                    "name": "John Doe"
+                }
+            ],
+            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CAvatar%2520size%253D%2522xs%2522%2520src%253D%2522https%253A%252F%252Fibb.co%252FvsQ88Yb%2522%2520name%253D%2522Don%2520Cheadle%2522%252F%253E%250A%253CAvatar%2520size%253D%2522sm%2522%2520src%253D%2522https%253A%252F%252Fibb.co%252FFwSxHty%2522%2520name%253D%2522Kylie%2520Walker%2522%252F%253E%250A%253CAvatar%2520size%253D%2522md%2522%2520src%253D%2522https%253A%252F%252Fibb.co%252F5vMhTfN%2522%2520name%253D%2522Mathew%2520Perry%2522%252F%253E%250A%253CAvatar%2520size%253D%2522lg%2522%2520src%253D%2522https%253A%252F%252Fibb.co%252FPzggWm2%2522%2520name%253D%2522John%2520Doe%2522%252F%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
+        },
+        {
+            "title": "Avatar Fallback",
+            "description": "If there is an error loading the src of the avatar, we will use the name prop, to generate the initials to display.<br/><br/>If there's no name prop, we use a default text.<br/><br/>You can also customize the background color, by passing hexavalue to bg prop.",
+            "keywords": [
+                "src",
+                "name",
+                "bg"
+            ],
+            "examples": [
+                {
+                    "size": "sm",
+                    "src": "",
+                    "name": "Kylie Walker"
+                },
+                {
+                    "size": "sm",
+                    "src": "",
+                    "name": "Kylie Walker",
+                    "bg": "#BE185D"
+                }
+            ],
+            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CAvatar%2520size%253D%2522sm%2522%2520src%253D%2522https%253A%252F%252Fibb.co%252FFwSxHty%2522%2520name%253D%2522Kylie%2520Walker%2522%252F%253E%250A%253CAvatar%2520size%253D%2522sm%2522%2520src%253D%2522https%253A%252F%252Fibb.co%252FFwSxHty%2522%2520name%253D%2522Kylie%2520Walker%2522%2520bg%253D%2522%2523BE185D%2522%252F%253E%250A' sandbox='allow-scripts allow-same-origin'></iframe>"
+        }
+    ]
+}
