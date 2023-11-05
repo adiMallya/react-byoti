@@ -1,0 +1,53 @@
+{
+    "title": "Badge",
+    "description": "Use a badge to highlight an item's status.",
+    "subsection": [
+        {
+            "title": "Badge Colors",
+            "description": "Pass the color prop to customise the color of the badge. Colors passed must to be hexadecimal codes",
+            "keywords": [
+                "color",
+                "hexadecimal"
+            ],
+            "examples": [
+                {
+                    "text": "Default"
+                },
+                {
+                    "text": "Success",
+                    "color": "#16a34a"
+                },
+                {
+                    "text": "Removed",
+                    "color": "#ef4444"
+                },
+                {
+                    "text": "New",
+                    "color": "#BE185D"
+                }
+            ],
+            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CAvatar%253EDefault%253C%252FAvatar%253E%250A%253CAvatar%2520color%253D%2522%252316a34a%2522%253ESuccess%253C%252FAvatar%253E%250A%253CAvatar%2520color%253D%2522%2523ef4444%2522%253ERemoved%253C%252FAvatar%253E%250A%253CAvatar%2520color%253D%2522%2523BE185D%2522%253ENew%253C%252FAvatar%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
+        },
+        {
+            "title": "Badge Variants",
+            "description": "Badges come in 2 variants. Pass the variant prop and set it to either solid or outline .",
+            "keywords": [
+                "solid",
+                "outline"
+            ],
+            "examples": [
+                {
+                    "text": "Default",
+                    "color": "#BE185D",
+                    "variant": "solid"
+                },
+                {
+                    "text": "New",
+                    "color": "#BE185D",
+                    "variant": "outline"
+                }
+            ],
+            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CAvatar%2520color%253D%2522%2523BE185D%2522%2520variant%253D%2522solid%2522%253EDefault%253C%252FAvatar%253E%250A%253CAvatar%2520color%253D%2522%2523BE185D%2522%2520variant%253D%2522outline%2522%253ENew%253C%252FAvatar%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
+        }
+    ]
+}
