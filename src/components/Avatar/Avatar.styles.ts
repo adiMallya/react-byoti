@@ -3,50 +3,59 @@ import { AvatarProps } from "./Avatar.types";
 
 const sizes = {
   xs: css`
-      width: 1.75rem;
-      height: 1.75rem;
-      font-size: 0.8em;
-    `,
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 0.8em;
+  `,
 
   sm: css`
-      width: 3rem;
-      height: 3rem;
-      font-size: 1em;
-    `,
+    width: 3rem;
+    height: 3rem;
+    font-size: 1em;
+  `,
 
   lg: css`
-      width: 10rem;
-      height: 10rem;
-      font-size: 3em;
-    `,
+    width: 10rem;
+    height: 10rem;
+    font-size: 3em;
+  `,
 
   md: css`
-      width: 6.25rem;
-      height: 6.25rem;
-      font-size: 2em;
-    `,
+    width: 6.25rem;
+    height: 6.25rem;
+    font-size: 2em;
+  `,
 };
 
-export const AvatarContainer = styled.img<AvatarProps>`
-    border-radius: 50%;
+export const AvatarContainer = styled.div<AvatarProps>`
+  border-radius: 50%;
+  padding: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  >img{
     width: 100%;
     height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+  }
 
-    ${({ bg }) => {
+  ${({ bg }) => {
     if (isHexColor(bg!)) {
       return css`
-          background-color: ${bg};
-          color: #ffffff;
-        `;
+        background-color: ${bg};
+        color: #ffffff;
+      `;
     } else {
       return css`
-          background-color: #ffffff;
-          color: #000000;
-        `;
+        background-color: #ffffff;
+        color: #000000;
+      `;
     }
   }}
 
-    ${({ size }) => sizes[size!] || sizes['md']};
+  ${({ size }) => sizes[size!] || sizes["md"]};
 `;
 
 function isHexColor(color: string): boolean {
