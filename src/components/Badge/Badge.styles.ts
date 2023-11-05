@@ -8,12 +8,16 @@ const setVariant = (
     switch (variant) {
         case 'solid':
             return css`
-                background-color: "${color}b0";
+                background-color: ${color}3d;
             `;
-        case 'online':
+        case 'outline':
             return css`
                 background-color: "transparent";
                 border: 1px solid ${color};
+            `;
+        case 'online':
+            return css`
+                background-color: "#16a34a";
             `;
         case 'offline':
             return css`
@@ -42,15 +46,15 @@ const setVariant = (
 };
 
 const BadgeContainer = styled.span<BadgeProps>`
-    padding: 0.125rem;
-    border-radius: 0.3rem;
+    padding: 0.125rem 0.3rem;
+    border-radius: 0.1rem;
 
     text-align: center;
     text-transform: uppercase;
     font-weight: 800;
 
     ${({ fontSize }) => css`
-        font-size: "${fontSize || 1.75}em" ;
+        font-size: ${fontSize || 0.825}em ;
     `}
 
     ${({ color }) => {
