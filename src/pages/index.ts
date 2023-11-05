@@ -1,2 +1,2 @@
 export { Home } from "./Home";
-export { AlertDoc, AvatarDoc, ButtonDoc } from "./docs";
+export { AlertDoc, AvatarDoc, BadgeDoc, ButtonDoc } from "./docs";
