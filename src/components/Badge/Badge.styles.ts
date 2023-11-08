@@ -12,31 +12,31 @@ const setVariant = (
             `;
         case 'outline':
             return css`
-                background-color: "transparent";
+                background-color: transparent;
                 border: 1px solid ${color};
             `;
         case 'online':
             return css`
-                background-color: "#16a34a";
+                background-color: #16a34a;
             `;
         case 'offline':
             return css`
-                background-color: "#fafafa";
+                background-color: #94a3b8;
             `;
         case 'busy':
             return css`
-                background-color: "#dc2626";
+                background-color: #dc2626;
             `;
         case 'away':
             return css`
-                background-color: "#f59e0b";
+                background-color: #f59e0b;
             `;
         case 'count':
             return css`
                 background-color: ${color};
                 border: none;
-                top: -0.7rem;
-                right: -1rem;
+                top: -0.7em;
+                right: -1em;
             `;
         default:
             return css`
@@ -47,7 +47,7 @@ const setVariant = (
 
 const BadgeContainer = styled.span<BadgeProps>`
     padding: 0.125rem 0.3rem;
-    border-radius: 0.1rem;
+    border-radius: 0.125rem;
 
     text-align: center;
     text-transform: uppercase;
@@ -69,7 +69,7 @@ const BadgeContainer = styled.span<BadgeProps>`
         }
     }}
     
-    ${({ variant, color }) => setVariant(variant || 'solid', isHexColor(color!) ? color : "#ffffff")}
+    ${({ variant, color }) => setVariant(variant || 'solid', isHexColor(color!) ? color : "#94a3b8")}
 `;
 
 const StatusBadge = styled.span<AvatarBadgeProps>`
@@ -84,10 +84,47 @@ const StatusBadge = styled.span<AvatarBadgeProps>`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.75em;
     color: #ffffff;
 
-    ${({ variant, color }) => setVariant(variant || 'offline', isHexColor(color!) ? color : "#ffffff")}
+    ${({ fontSize }) => css`
+        font-size: ${fontSize || 0.75}em ;
+    `}
+
+    ${({ status, color }) => setVariant(status || 'offline', isHexColor(color!) ? color : "#94a3b8")}
+
+    ${(props) =>
+        props.size === 'lg' && css`
+            right: 0.4em;
+            top: 0.3em;
+            height: 1.565rem;
+            min-width: 1.565rem;
+        `
+    }
+
+    ${(props) =>
+        (props.size === 'md' || !props.size) && css`
+            right: 0.3em;
+            top: 0.3em;
+        `
+    }
+
+    ${(props) =>
+        props.size === 'sm' && css`
+            right: 0.1em;
+            top: 0.1em;
+            height: 0.9375rem;
+            min-width: 0.9375rem;
+        `
+    }
+
+    ${(props) =>
+        props.size === 'xs' && css`
+            right: 0em;
+            top: 0em;
+            height: 0.625rem;
+            min-width: 0.625rem;
+        `
+    }
 `;
 
 function isHexColor(color: string): boolean {
