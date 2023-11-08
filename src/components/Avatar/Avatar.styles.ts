@@ -29,7 +29,7 @@ const sizes = {
 
 export const AvatarContainer = styled.div<AvatarProps>`
   border-radius: 50%;
-  padding: relative;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
