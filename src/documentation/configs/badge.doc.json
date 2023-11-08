@@ -48,6 +48,55 @@
                 }
             ],
             "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CAvatar%2520color%253D%2522%2523BE185D%2522%2520variant%253D%2522solid%2522%253EDefault%253C%252FAvatar%253E%250A%253CAvatar%2520color%253D%2522%2523BE185D%2522%2520variant%253D%2522outline%2522%253ENew%253C%252FAvatar%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
+        },
+        {
+            "title": "Status Badges",
+            "description": "You might need to show an item's or user avatar's current status. We call this a status badge . <br/><br/>It comes in 5 variants - online , offline , away , busy and count . <br/><br/> PLEASE NOTE: Status badges are only to be used with Avatar component.",
+            "keywords": [
+                "status",
+                "badge",
+                "variant",
+                "online",
+                "offline",
+                "away",
+                "busy",
+                "custom",
+                "avatar"
+            ],
+            "examples": [
+                {
+                    "size": "sm",
+                    "src": "https://res.cloudinary.com/dtaztriby/image/upload/v1699188234/react-byoti/avatar-2_hgzg9i.png",
+                    "name": "Katty Perry",
+                    "status": "online"
+                },
+                {
+                    "size": "sm",
+                    "src": "https://res.cloudinary.com/dtaztriby/image/upload/v1699188234/react-byoti/avatar-2_hgzg9i.png",
+                    "name": "Katty Perry",
+                    "status": "offline"
+                },
+                {
+                    "size": "sm",
+                    "src": "https://res.cloudinary.com/dtaztriby/image/upload/v1699188234/react-byoti/avatar-2_hgzg9i.png",
+                    "name": "Katty Perry",
+                    "status": "away"
+                },
+                {
+                    "size": "sm",
+                    "src": "https://res.cloudinary.com/dtaztriby/image/upload/v1699188234/react-byoti/avatar-2_hgzg9i.png",
+                    "name": "Katty Perry",
+                    "status": "busy"
+                },
+                {
+                    "size": "sm",
+                    "src": "https://res.cloudinary.com/dtaztriby/image/upload/v1699188234/react-byoti/avatar-2_hgzg9i.png",
+                    "name": "Katty Perry",
+                    "status": "custom",
+                    "color": "#BE185D"
+                }
+            ],
+            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CAvatar%253EDefault%253C%252FAvatar%253E%250A%253CAvatar%2520color%253D%2522%252316a34a%2522%253ESuccess%253C%252FAvatar%253E%250A%253CAvatar%2520color%253D%2522%2523ef4444%2522%253ERemoved%253C%252FAvatar%253E%250A%253CAvatar%2520color%253D%2522%2523BE185D%2522%253ENew%253C%252FAvatar%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
         }
     ]
 }
