@@ -6,5 +6,5 @@ export const Badge: React.FC<BadgeProps> = (props): JSX.Element => {
 };
 
 export const AvatarBadge: React.FC<AvatarBadgeProps> = (props): JSX.Element => {
-    return <StatusBadge {...props}/>
-}
+    return <StatusBadge {...props} aria-label={props.status} />
+};
