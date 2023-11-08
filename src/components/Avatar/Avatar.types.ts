@@ -1,9 +1,10 @@
-import { ImgHTMLAttributes } from "react";
+import { ImgHTMLAttributes, ReactNode } from "react";
 
 type HexValue = string;
 
 export interface AvatarProps extends ImgHTMLAttributes<HTMLElement> {
     size?: 'lg' | 'md' | 'sm' | 'xs',
     name?: string,
-    bg?: HexValue
+    bg?: HexValue,
+    children?: ReactNode
 }
