@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { BadgeProps, AvatarBadgeProps } from "./Badge.types";
 
 const setVariant = (
-    variant: "solid" | "outline" | "online" | "offline" | "busy" | "away" | "count",
+    variant: "solid" | "outline" | "online" | "offline" | "busy" | "away" | "custom",
     color?: string
 ) => {
     switch (variant) {
@@ -31,16 +31,13 @@ const setVariant = (
             return css`
                 background-color: #f59e0b;
             `;
-        case 'count':
+        case 'custom':
             return css`
                 background-color: ${color};
-                border: none;
-                top: -0.7em;
-                right: -1em;
             `;
         default:
             return css`
-          background-color: color;
+          background-color: ${color};
         `;
     }
 };

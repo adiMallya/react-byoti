@@ -9,6 +9,7 @@ export interface BadgeProps extends HtmlHTMLAttributes<HTMLSpanElement> {
 }
 
 export interface AvatarBadgeProps extends BadgeProps {
-    status?: 'online' | 'offline' | 'busy' | 'away' | 'count',
+    status?: 'online' | 'offline' | 'busy' | 'away' | 'custom',
+    color?: string,
     [key: string]: any
 }
