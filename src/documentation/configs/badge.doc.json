@@ -51,7 +51,7 @@
         },
         {
             "title": "Status Badges",
-            "description": "You might need to show an item's or user avatar's current status. We call this a status badge . <br/><br/>It comes in 5 variants - online , offline , away , busy and count . <br/><br/> PLEASE NOTE: Status badges are only to be used with Avatar component.",
+            "description": "You might need to show an item's or user avatar's current status. We call this a status badge . <br/><br/>It comes in 5 variants - online , offline , away , busy and custom . <br/><br/> PLEASE NOTE: Status badges are only to be used with Avatar component.",
             "keywords": [
                 "status",
                 "badge",
@@ -61,7 +61,7 @@
                 "away",
                 "busy",
                 "custom",
-                "avatar"
+                "Avatar"
             ],
             "examples": [
                 {
@@ -96,7 +96,7 @@
                     "color": "#BE185D"
                 }
             ],
-            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CAvatar%253EDefault%253C%252FAvatar%253E%250A%253CAvatar%2520color%253D%2522%252316a34a%2522%253ESuccess%253C%252FAvatar%253E%250A%253CAvatar%2520color%253D%2522%2523ef4444%2522%253ERemoved%253C%252FAvatar%253E%250A%253CAvatar%2520color%253D%2522%2523BE185D%2522%253ENew%253C%252FAvatar%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
+            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CAvatar%2520src%253D%2522https%253A%252F%252Fbitly.ws%252FZNUh%2522%2520size%253D%2522sm%2522%2520name%253D%2522Katty%2520Perry%2522%253E%250A%2509%253CAvatarBadge%2520status%253D%2522online%2522%2520size%253D%2522sm%2522%252F%253E%250A%253C%252FAvatar%253E%250A%250A%253CAvatar%2520src%253D%2522https%253A%252F%252Fbitly.ws%252FZNUh%2522%2520size%253D%2522sm%2522%2520name%253D%2522Katty%2520Perry%2522%253E%250A%2509%253CAvatarBadge%2520status%253D%2522offline%2522%2520size%253D%2522sm%2522%252F%253E%250A%253C%252FAvatar%253E%250A%250A%253CAvatar%2520src%253D%2522https%253A%252F%252Fbitly.ws%252FZNUh%2522%2520size%253D%2522sm%2522%2520name%253D%2522Katty%2520Perry%2522%253E%250A%2509%253CAvatarBadge%2520status%253D%2522away%2522%2520size%253D%2522sm%2522%252F%253E%250A%253C%252FAvatar%253E%250A%250A%253CAvatar%2520src%253D%2522https%253A%252F%252Fbitly.ws%252FZNUh%2522%2520size%253D%2522sm%2522%2520name%253D%2522Katty%2520Perry%2522%253E%250A%2509%253CAvatarBadge%2520status%253D%2522busy%2522%2520size%253D%2522sm%2522%252F%253E%250A%253C%252FAvatar%253E%250A%250A%250A%253CAvatar%2520src%253D%2522https%253A%252F%252Fbitly.ws%252FZNUh%2522%2520size%253D%2522sm%2522%2520name%253D%2522Katty%2520Perry%2522%253E%250A%2509%253CAvatarBadge%2520status%253D%2522custom%2522%2520size%253D%2522sm%2522%2520color%253D%2522%2523BE185D%2522%252F%253E%250A%253C%252FAvatar%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
         }
     ]
 }
