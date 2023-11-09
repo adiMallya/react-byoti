@@ -1,0 +1,65 @@
+{
+    "title": "Heading",
+    "description": "All <h1> through <h6> semantic headings available to use in your content.",
+    "subsection": [
+        {
+            "title": "Changing size",
+            "description": "To increase the size of a heading, use the size props. It renders a h2 tag by default.",
+            "keywords": [
+                "size",
+                "color"
+            ],
+            "examples": [
+                {
+                    "size": "2xl",
+                    "text": "H1 Heading"
+                },
+                {
+                    "size": "xl",
+                    "text": "H2 Heading"
+                },
+                {
+                    "size": "lg",
+                    "text": "H3 Heading"
+                },
+                {
+                    "size": "md",
+                    "text": "H4 Heading"
+                },
+                {
+                    "size": "sm",
+                    "text": "H5 Heading"
+                },
+                {
+                    "size": "xs",
+                    "text": "H6 Heading"
+                }
+            ],
+            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CHeading%2520size%253D%25222xl%2522%253EH1%2520Heading%253C%252FHeading%253E%250A%253CHeading%2520size%253D%2522xl%2522%253EH2%2520Heading%253C%252FHeading%253E%250A%253CHeading%2520size%253D%2522lg%2522%253EH3%2520Heading%253C%252FHeading%253E%250A%253CHeading%2520size%253D%2522md%2522%253EH4%2520Heading%253C%252FHeading%253E%250A%253CHeading%2520size%253D%2522sm%2522%253EH5%2520Heading%253C%252FHeading%253E%250A%253CHeading%2520size%253D%2522xs%2522%253EH6%2520Heading%253C%252FHeading%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
+        },
+        {
+            "title": "Styling headings",
+            "description": "You can apply to it all styles that you can do to a regular HTML heading tag. Pass color prop to style heading color.",
+            "keywords": [
+                "color"
+            ],
+            "examples": [
+                {
+                    "text": "I love byoti",
+                    "color": "#16a34a"
+                },
+                {
+                    "size": "lg",
+                    "text": "I love byoti",
+                    "color": "#84cc16"
+                },
+                {
+                    "size": "md",
+                    "text": "I love byoti",
+                    "color": "#facc15"
+                }
+            ],
+            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CHeading%2520color%253D%2522%252316a34a%2522%253EI%2520love%2520byoti%253C%252FHeading%253E%250A%253CHeading%2520color%253D%2522%252384cc16%2522%2520size%253D%2522lg%2522%253EI%2520love%2520byoti%253C%252FHeading%253E%250A%253CHeading%2520color%253D%2522%2523facc15%2522%2520size%253D%2522md%2522%253EI%2520love%2520byoti%253C%252FHeading%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
+        }
+    ]
+}
