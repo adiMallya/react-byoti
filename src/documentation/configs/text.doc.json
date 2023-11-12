@@ -1,0 +1,117 @@
+{
+    "title": "Text",
+    "description": "Use this interface for the paragraphs and other text in your content.",
+    "subsection": [
+        {
+            "title": "Changing font size",
+            "description": "To increase the font size of the text, pass either one of the available options or the size in em/px units to fontSize prop.",
+            "keywords": [
+                "em/px",
+                "fontSize"
+            ],
+            "examples": [
+                {
+                    "fontSize": "48px",
+                    "text": "(48px) In love with byoti"
+                },
+                {
+                    "fontSize": "2em",
+                    "text": "(2em) In love with byoti"
+                },
+                {
+                    "fontSize": "2xl",
+                    "text": "(2xl) In love with byoti"
+                },
+                {
+                    "fontSize": "xl",
+                    "text": "(xl) In love with byoti"
+                },
+                {
+                    "fontSize": "lg",
+                    "text": "(lg) In love with byoti"
+                },
+                {
+                    "fontSize": "md",
+                    "text": "(md) In love with byoti"
+                },
+                {
+                    "fontSize": "sm",
+                    "text": "(sm) In love with byoti"
+                },
+                {
+                    "fontSize": "xs",
+                    "text": "(xs) In love with byoti"
+                }
+            ],
+            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CHeading%2520size%253D%25222xl%2522%253EH1%2520Heading%253C%252FHeading%253E%250A%253CHeading%2520size%253D%2522xl%2522%253EH2%2520Heading%253C%252FHeading%253E%250A%253CHeading%2520size%253D%2522lg%2522%253EH3%2520Heading%253C%252FHeading%253E%250A%253CHeading%2520size%253D%2522md%2522%253EH4%2520Heading%253C%252FHeading%253E%250A%253CHeading%2520size%253D%2522sm%2522%253EH5%2520Heading%253C%252FHeading%253E%250A%253CHeading%2520size%253D%2522xs%2522%253EH6%2520Heading%253C%252FHeading%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
+        },
+        {
+            "title": "Semantic text & styles",
+            "description": "You can style texts passing the appropriate props - fontWeight, color or as (to render a specific text HTML element).",
+            "keywords": [
+                "as",
+                "color",
+                "fontWeight"
+            ],
+            "examples": [
+                {
+                    "text": "I love colorful byoti",
+                    "color": "#16a34a"
+                },
+                {
+                    "text": "I like light weighted byoti-ful texts",
+                    "fontWeight": "400"
+                },
+                {
+                    "text": "I love bold & byoti-ful",
+                    "fontWeight": "bold"
+                },
+                {
+                    "text": "Italic",
+                    "as": "i"
+                },
+                {
+                    "text": "Emphasis",
+                    "as": "em"
+                },
+                {
+                    "text": "Bold",
+                    "as": "b"
+                },
+                {
+                    "text": "Citation",
+                    "as": "cite"
+                },
+                {
+                    "text": "Deleted",
+                    "as": "del"
+                },
+                {
+                    "text": "Inserted",
+                    "as": "ins"
+                },
+                {
+                    "text": "Highlighted",
+                    "as": "mark"
+                },
+                {
+                    "text": "Strikethrough",
+                    "as": "s"
+                },
+                {
+                    "text": "Underline",
+                    "as": "u"
+                },
+                {
+                    "text": "Sample",
+                    "as": "samp"
+                },
+                {
+                    "text": "Hello World!",
+                    "as": "code"
+                }
+            ],
+            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CHeading%2520color%253D%2522%252316a34a%2522%253EI%2520love%2520byoti%253C%252FHeading%253E%250A%253CHeading%2520color%253D%2522%252384cc16%2522%2520size%253D%2522lg%2522%253EI%2520love%2520byoti%253C%252FHeading%253E%250A%253CHeading%2520color%253D%2522%2523facc15%2522%2520size%253D%2522md%2522%253EI%2520love%2520byoti%253C%252FHeading%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
+        }
+    ]
+}
