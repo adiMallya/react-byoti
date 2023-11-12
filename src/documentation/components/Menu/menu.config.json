@@ -24,8 +24,8 @@
         "route": "heading"
     },
     {
-        "menuItem": "Typography",
-        "route": "typography"
+        "menuItem": "Text",
+        "route": "text"
     },
     {
         "menuItem": "Image",
