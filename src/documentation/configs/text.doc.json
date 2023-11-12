@@ -43,7 +43,7 @@
                     "text": "(xs) In love with byoti"
                 }
             ],
-            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CHeading%2520size%253D%25222xl%2522%253EH1%2520Heading%253C%252FHeading%253E%250A%253CHeading%2520size%253D%2522xl%2522%253EH2%2520Heading%253C%252FHeading%253E%250A%253CHeading%2520size%253D%2522lg%2522%253EH3%2520Heading%253C%252FHeading%253E%250A%253CHeading%2520size%253D%2522md%2522%253EH4%2520Heading%253C%252FHeading%253E%250A%253CHeading%2520size%253D%2522sm%2522%253EH5%2520Heading%253C%252FHeading%253E%250A%253CHeading%2520size%253D%2522xs%2522%253EH6%2520Heading%253C%252FHeading%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
+            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CText%2520fontSize%253D%252248px%2522%253E%2522%2848px%29%2520In%2520love%2520with%2520byoti%2522%253C%252FText%253E%250A%253CText%2520fontSize%253D%25222em%2522%253E%2522%282em%29%2520In%2520love%2520with%2520byoti%2522%253C%252FText%253E%250A%253CText%2520fontSize%253D%25222xl%2522%253E%2522%282xl%29%2520In%2520love%2520with%2520byoti%2522%253C%252FText%253E%250A%253CText%2520fontSize%253D%2522xl%2522%253E%2522%28xl%29%2520In%2520love%2520with%2520byoti%2522%253C%252FText%253E%250A%253CText%2520fontSize%253D%2522lg%2522%253E%2522%28lg%29%2520In%2520love%2520with%2520byoti%2522%253C%252FText%253E%250A%253CText%2520fontSize%253D%2522md%2522%253E%2522%28md%29%2520In%2520love%2520with%2520byoti%2522%253C%252FText%253E%250A%253CText%2520fontSize%253D%2522sm%2522%253E%2522%28sm%29%2520In%2520love%2520with%2520byoti%2522%253C%252FText%253E%250A%253CText%2520fontSize%253D%2522xs%2522%253E%2522%28xs%29%2520In%2520love%2520with%2520byoti%2522%253C%252FText%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
         },
         {
             "title": "Semantic text & styles",
@@ -56,7 +56,7 @@
             "examples": [
                 {
                     "text": "I love colorful byoti",
-                    "color": "#16a34a"
+                    "color": "#e3307a"
                 },
                 {
                     "text": "I like light weighted byoti-ful texts",
@@ -111,7 +111,7 @@
                     "as": "code"
                 }
             ],
-            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CHeading%2520color%253D%2522%252316a34a%2522%253EI%2520love%2520byoti%253C%252FHeading%253E%250A%253CHeading%2520color%253D%2522%252384cc16%2522%2520size%253D%2522lg%2522%253EI%2520love%2520byoti%253C%252FHeading%253E%250A%253CHeading%2520color%253D%2522%2523facc15%2522%2520size%253D%2522md%2522%253EI%2520love%2520byoti%253C%252FHeading%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
+            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CText%2520color%253D%2522%2523e3307a%2522%253E%2522I%2520love%2520colorful%2520byoti%2522%253C%252FText%253E%250A%250A%253CText%2520fontWeight%253D%2522400%2522%253E%2522I%2520like%2520light%2520weighted%2520byoti-ful%2520texts%2522%253C%252FText%253E%250A%250A%253CText%2520fontWeight%253D%2522bold%2522%253E%2522I%2520love%2520bold%2520%2526%2520byoti-ful%2522%253C%252FText%253E%250A%250A%253CText%2520as%253D%2522i%2522%253E%2522Italic%2522%253C%252FText%253E%250A%250A%253CText%2520as%253D%2522em%2522%253E%2522Emphasis%2522%253C%252FText%253E%250A%250A%253CText%2520as%253D%2522b%2522%253E%2522Bold%2522%253C%252FText%253E%250A%250A%253CText%2520as%253D%2522cite%2522%253E%2522Citation%2522%253C%252FText%253E%250A%250A%253CText%2520as%253D%2522del%2522%253E%2522Deleted%2522%253C%252FText%253E%250A%250A%253CText%2520as%253D%2522ins%2522%253E%2522Inserted%2522%253C%252FText%253E%250A%250A%253CText%2520as%253D%2522mark%2522%253E%2522Highlighted%2522%253C%252FText%253E%250A%250A%253CText%2520as%253D%2522s%2522%253E%2522Strikethrough%2522%253C%252FText%253E%250A%250A%253CText%2520as%253D%2522u%2522%253E%2522Underline%2522%253C%252FText%253E%250A%250A%253CText%2520as%253D%2522samp%2522%253E%2522Sample%2522%253C%252FText%253E%250A%250A%253CText%2520as%253D%2522code%2522%253E%2522Hello%2520World%21%2522%253C%252FText%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
         }
     ]
 }
