@@ -24,11 +24,11 @@
         "route": "heading"
     },
     {
-        "menuItem": "Text",
-        "route": "text"
-    },
-    {
         "menuItem": "Image",
         "route": "image"
+    },
+    {
+        "menuItem": "Text",
+        "route": "text"
     }
 ]
