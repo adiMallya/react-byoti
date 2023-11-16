@@ -34,7 +34,7 @@ export const TextContainer = styled.p<TextProps>`
     ${({ fontSize }) => sizeStyles[fontSize!] || sizeStyles['md']};
 
     ${({ fontSize }) => css`
-        font-size: ${isValidUnit(fontSize) && fontSize} !important;
+        font-size: ${isValidUnit(fontSize!) && fontSize} !important;
     `}
 
     ${({ fontWeight }) => css`
