@@ -4,7 +4,7 @@ import { DocLayout } from "src/documentation/components";
 import doc from "src/documentation/configs/card.doc.json";
 
 import * as S from "src/pages/styles";
-import { Card, CardBody, CardHeader, CardFooter, Text, Heading, Image, Button } from "src/components";
+import { Card, CardBody, CardFooter, Text, Heading, Image, Button } from "src/components";
 
 export const CardDoc = (): JSX.Element => {
   useEffect(() => {
@@ -34,6 +34,7 @@ export const CardDoc = (): JSX.Element => {
                 )}
               </p>
               <S.ComponentDisplay column="true">
+                {/* @ts-ignore */}
                 {examples.map(({ content, color, ...props }) => (
                     <Card {...props}>
                       <CardBody>
@@ -64,6 +65,7 @@ export const CardDoc = (): JSX.Element => {
                 )}
               </p>
               <S.ComponentDisplay column="true">
+                {/* @ts-ignore */}
                 {examples.map(({ src, heading, content, price }) => (
                     <Card maxw={30}>
                       <Image src={src} alt="Red sports shoes" />
@@ -101,6 +103,7 @@ export const CardDoc = (): JSX.Element => {
                 )}
               </p>
               <S.ComponentDisplay column="true">
+                {/* @ts-ignore */}
                 {examples.map(({ src, heading, content, price }) => (
                     <Card direction={"row"} spacing={2}>
                       <Image src={src} alt="Skin care kit by beyou" boxSize={200}/>

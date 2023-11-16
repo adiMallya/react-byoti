@@ -36,7 +36,9 @@ export const BadgeDoc = (): JSX.Element => {
                 )}
               </p>
               <S.ComponentDisplay>
+                {/* @ts-ignore */}
                 {examples.map(({ text, ...props }, index) => (
+                  //@ts-ignore
                   <Badge {...props} key={index}>
                     {text}
                   </Badge>
@@ -66,6 +68,7 @@ export const BadgeDoc = (): JSX.Element => {
                 )}
               </p>
               <S.ComponentDisplay>
+                {/* @ts-ignore */}
                 {examples.map(({ status, size, color, ...props }, index) => (
                   <Avatar {...props} key={index} size={size}>
                     <AvatarBadge status={status} size={size} color={color} />

@@ -36,6 +36,7 @@ export const ImageDoc = (): JSX.Element => {
               </p>
               <S.ComponentDisplay>
                 {examples.map((props) => (
+                    //@ts-ignore
                     <Image {...props} />
                 ))}
               </S.ComponentDisplay>
@@ -64,6 +65,7 @@ export const ImageDoc = (): JSX.Element => {
               </p>
               <S.ComponentDisplay column="true">
                 {examples.map((props) => (
+                    //@ts-ignore
                     <Image {...props} />
                 ))}
               </S.ComponentDisplay>

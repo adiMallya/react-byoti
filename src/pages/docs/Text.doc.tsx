@@ -36,6 +36,7 @@ export const TextDoc = (): JSX.Element => {
               </p>
               <S.ComponentDisplay column="true">
                 {examples.map(({ text, ...props }) => (
+                    //@ts-ignore
                     <Text {...props}>{text}</Text>
                 ))}
               </S.ComponentDisplay>
@@ -64,6 +65,7 @@ export const TextDoc = (): JSX.Element => {
               </p>
               <S.ComponentDisplay column="true">
                 {examples.map(({ text, ...props }) => (
+                    //@ts-ignore
                     <Text {...props}>{text}</Text>
                 ))}
               </S.ComponentDisplay>

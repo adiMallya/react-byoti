@@ -36,6 +36,7 @@ export const ButtonDoc = (): JSX.Element => {
             </p>
             <S.ComponentDisplay>
               {examples.map((prop, index) => (
+                //@ts-ignore
                 <Button {...prop} key={index} />
               ))}
             </S.ComponentDisplay>
