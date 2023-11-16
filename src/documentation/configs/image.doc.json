@@ -13,18 +13,18 @@
             ],
             "examples": [
                 {
-                    "boxSize": "100",
+                    "boxSize": 100,
                     "src": "https://fastly.picsum.photos/id/292/3852/2556.jpg?hmac=cPYEh0I48Xpek2DPFLxTBhlZnKVhQCJsbprR-Awl9lo",
                     "alt": "Sample"
                 },
                 {
-                    "boxSize": "150",
+                    "boxSize": 150,
                     "fit": "fill",
                     "src": "https://fastly.picsum.photos/id/292/3852/2556.jpg?hmac=cPYEh0I48Xpek2DPFLxTBhlZnKVhQCJsbprR-Awl9lo",
                     "alt": "Sample"
                 },
                 {
-                    "boxSize": "200",
+                    "boxSize": 200,
                     "fit": "cover",
                     "src": "https://fastly.picsum.photos/id/292/3852/2556.jpg?hmac=cPYEh0I48Xpek2DPFLxTBhlZnKVhQCJsbprR-Awl9lo",
                     "alt": "Sample"
@@ -40,7 +40,7 @@
             ],
             "examples": [
                 {
-                    "boxSize": "150",
+                    "boxSize": 150,
                     "rounded": true,
                     "src": "https://fastly.picsum.photos/id/64/4326/2884.jpg?hmac=9_SzX666YRpR_fOyYStXpfSiJ_edO3ghlSRnH2w09Kg",
                     "alt": "Sample"
