@@ -1,0 +1,72 @@
+{
+    "title": "Card",
+    "description": "Cards are flexible containers, to group and display content.",
+    "subsection": [
+        {
+            "title": "Basic Card & Styling",
+            "description": "Wrap your content within the CardBody to get a basic Card .<br/><br/> You can choose change the default color of cards, by passing a hexadecimal value to the bg prop. Set the max-width for card, passing the maxW prop in rem 's .",
+            "keywords": [
+                "Card",
+                "CardBody",
+                "bg",
+                "maxw",
+                "rem"
+            ],
+            "examples": [
+                {
+                    "content": "View benefits of using a component library, like byoti."
+                },
+                {
+                    "content": "This feature is current under maintenance.",
+                    "bg": "#f59e0b",
+                    "color": "#ffffff",
+                    "maxw": 30
+                }
+            ],
+            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CCard%253E%250A%2509%253CCardBody%253E%250A%2520%2520%2520%2520%2509%253CText%2520fontWeight%253D%257B600%257D%253E%2522View%2520benefits%2520of%2520using%2520a%2520component%2520library%252C%2520like%2520byoti.%2522%253C%252FText%253E%250A%2520%2520%2520%2520%253C%252FCardBody%253E%2520%250A%253C%252FCard%253E%250A%250A%253CCard%2520bg%253D%2522%2523f59e0b%2522%2520maxW%253D%252230%2522%253E%250A%2509%253CCardBody%253E%250A%2520%2520%2520%2520%2509%253CText%2520fontWeight%253D%257B600%257D%2520color%253D%2522%2523ffffff%2522%253E%2522This%2520feature%2520is%2520current%2520under%2520maintenance.%2522%253C%252FText%253E%250A%2520%2520%2520%2520%253C%252FCardBody%253E%2520%250A%253C%252FCard%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
+        },
+        {
+            "title": "Vertical Card",
+            "description": "By default the content displayed inside a card is vertical. The direction of flow can also be set, passing the direction prop.<br/><br/>Direction values can be row , column , or even different depending on devices .<br/><br/><br/> Below is a product card made by combining Card , CardBody and CardFooter components.",
+            "keywords": [
+                "direction",
+                "row",
+                "column",
+                "Card",
+                "CardBody",
+                "CardFooter"
+            ],
+            "examples": [
+                {
+                    "src": "https://res.cloudinary.com/dtaztriby/image/upload/v1699188234/react-byoti/product_athcu3.jpg",
+                    "heading": "Red Sports Shoes",
+                    "content": "This shoes is perfect for walking, running and as well as for your casual wear. Comes in a slick red color and 4 different sizes.",
+                    "price": "$350"
+                }
+            ],
+            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CCard%2520maxw%253D%257B30%257D%253E%250A%250A%2520%2520%253CImage%2520src%253D%2522https%253A%252F%252Fres.cloudinary.com%252Fdtaztriby%252Fimage%252Fupload%252Fv1699188234%252Freact-byoti%252Fproduct_athcu3.jpg%2522%2520alt%253D%2522Red%2520sports%2520shoes%2522%2520%252F%253E%250A%2520%2520%250A%2520%2520%253CCardBody%2520spacing%253D%257B1%257D%253E%250A%2520%2520%2520%2520%253CHeading%2520size%253D%2522sm%2522%253E%2522Red%2520Sports%2520Shoes%2522%253C%252FHeading%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%253CText%253E%2522This%2520shoes%2520is%2520perfect%2520for%2520walking%252C%2520running%2520and%2520as%2520well%2520as%2520for%2520your%2520casual%2520wear.%2520Comes%2520in%2520a%2520slick%2520red%2520color%2520and%25204%2520different%2520sizes.%2522%253C%252FText%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%253CText%2520color%253D%2522%2523075985%2522%2520fontWeight%253D%257B600%257D%2520fontSize%253D%2522xl%2522%253E%2522%2524350%2522%253C%252FText%253E%2520%250A%2520%2520%253C%252FCardBody%253E%250A%2520%2520%250A%2520%2520%253CCardFooter%2520spacing%253D%257B1%257D%253E%250A%2520%2520%2520%2520%253CButton%2520size%253D%2522lg%2522%2520type%253D%2522button%2522%2520label%253D%2522Buy%2520Now%2522%2520color%253D%2522%2523075985%2522%252F%253E%250A%2520%2520%2520%2520%253CButton%2520size%253D%2522lg%2522%2520variant%253D%2522outline%2522%2520type%253D%2522button%2522%2520label%253D%2522Add%2520to%2520Cart%2522%2520color%253D%2522%2523075985%2522%252F%253E%250A%2520%2520%253C%252FCardFooter%253E%250A%2520%2520%250A%253C%252FCard%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
+        },
+        {
+            "title": "Horizontal Card",
+            "description": "Make the content horizontal, passing the direction='row' prop.<br></br/> PLEASE NOTE: You can adjust space occupied by card components via spacing & justify props. <br/><br/>The spacing prop basically decides the gap between the flexed component in rem 's. <br/><br/>Values available for justify are - between , evenly and around .",
+            "keywords": [
+                "direction='row'",
+                "spacing",
+                "rem",
+                "justify",
+                "between",
+                "around",
+                "evenly"
+            ],
+            "examples": [
+                {
+                    "src": "https://res.cloudinary.com/dtaztriby/image/upload/v1699188234/react-byoti/product-1_vsphwu.jpg",
+                    "heading": "Skincare Kit by beyou",
+                    "content": "beyou's collection of skincare products includes serum, moisturizer, oil control toner, face cleaner, and eye cream.",
+                    "price": "$450"
+                }
+            ],
+            "code": "<iframe src='https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0.16%29&t=a11y-dark&wt=sharp&l=application%2Ftypescript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CCard%2520direction%253D%2522row%2522%2520spacing%253D%25222%2522%253E%250A%250A%2520%2520%253CImage%2520src%253D%2522https%253A%252F%252Fres.cloudinary.com%252Fdtaztriby%252Fimage%252Fupload%252Fv1699188234%252Freact-byoti%252Fproduct-1_vsphwu.jpg%2522%2520alt%253D%2522Skin%2520care%2520kit%2520by%2520beyou%2522%2520%252F%253E%250A%2520%2520%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%253CCardBody%2520spacing%253D%257B1%257D%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253CHeading%2520size%253D%2522sm%2522%253E%2522Skincare%2520Kit%2520by%2520beyou%2522%253C%252FHeading%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253CText%253E%2522beyou%27s%2520collection%2520of%2520skincare%2520products%2520includes%2520serum%252C%2520moisturizer%252C%2520oil%2520control%2520toner%252C%2520face%2520cleaner%252C%2520and%2520eye%2520cream.%2522%253C%252FText%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253CText%2520color%253D%2522%2523075985%2522%2520fontWeight%253D%257B600%257D%2520fontSize%253D%2522xl%2522%253E%2522%2524450%2522%253C%252FText%253E%2520%250A%2520%2520%2520%2520%253C%252FCardBody%253E%250A%250A%2520%2520%2520%2520%253CCardFooter%2520spacing%253D%257B1%257D%253E%250A%2520%2520%2520%2520%2520%2520%253CButton%2520size%253D%2522lg%2522%2520type%253D%2522button%2522%2520label%253D%2522Buy%2520Now%2522%2520color%253D%2522%2523075985%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%253CButton%2520size%253D%2522lg%2522%2520variant%253D%2522outline%2522%2520type%253D%2522button%2522%2520label%253D%2522Add%2520to%2520Cart%2522%2520color%253D%2522%2523075985%2522%252F%253E%250A%2520%2520%2520%2520%253C%252FCardFooter%253E%250A%2520%2520%253C%252Fdiv%250A%2520%2520%250A%253C%252FCard%253E' sandbox='allow-scripts allow-same-origin'></iframe>"
+        }
+    ]
+}
