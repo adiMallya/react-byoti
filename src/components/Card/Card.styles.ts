@@ -11,6 +11,7 @@ const CardContainer = styled.div<CardProps>`
     padding: 1.25rem;
     background-color: ${({ theme }) => theme.secondary || '#ffffff'};
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    overflow: hidden;
 
     ${({ maxw }) => maxw && css`
         max-width: ${maxw}rem;
@@ -47,29 +48,54 @@ const CardContainer = styled.div<CardProps>`
 
 const CardHeaderContainer = styled.div<CommonProps>`
     display: flex;
-    padding: 1.25rem;
+    padding: 1.25rem 0;
 
     ${({ bg }) => bg && css`
         background-color: ${isHexColor(bg) && bg} !important;
+    `};
+
+    ${({ spacing }) => spacing && css`
+        gap: ${spacing}rem;
+    `};
+
+    ${({ justify }) => justify && css`
+        justify-content: space-${justify};
     `};
 `;
 
 const CardBodyContainer = styled.div<CommonProps>`
     display: flex;
-    padding: 1.25rem;
+    flex-direction: column;
+    align-items: start;
     flex: 1 1;
+
+    padding: 0.625rem 0;
 
     ${({ bg }) => bg && css`
         background-color: ${isHexColor(bg) && bg} !important;
+    `};
+
+    ${({ spacing }) => spacing && css`
+        gap: ${spacing}rem;
     `};
 `;
 
 const CardFooterContainer = styled.div<CommonProps>`
     display: flex;
-    padding: 1.25rem;
+    align-items: center;
+
+    padding: 0.625rem 0;
 
     ${({ bg }) => bg && css`
         background-color: ${isHexColor(bg) && bg} !important;
+    `};
+
+    ${({ spacing }) => spacing && css`
+        gap: ${spacing}rem;
+    `};
+
+    ${({ justify }) => justify && css`
+        justify-content: space-${justify};
     `};
 `;
 

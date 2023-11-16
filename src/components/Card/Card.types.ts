@@ -14,7 +14,9 @@ type FlexType = FlexDirection | FlexDirectionByDevice;
 
 export interface CommonProps extends HtmlHTMLAttributes<HTMLDivElement> {
     bg?: HexValue,
-    children?: ReactNode
+    children?: ReactNode,
+    spacing?: number,
+    justify?: 'between' | 'evenly' | 'around'
 }
 
 export interface CardProps extends CommonProps {
