@@ -11,7 +11,7 @@ export const ImageContainer = styled.img<ImageProps>`
     `}
 
     ${({ fit }) => css`
-        object-fit: ${fit || 'fill'};
+        object-fit: ${fit || 'cover'};
     `}
 
     ${({ rounded }) => rounded && css`

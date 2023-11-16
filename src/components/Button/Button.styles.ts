@@ -77,7 +77,7 @@ const setVariant = (
 
 const ButtonContainer = styled.button<ButtonProps>`
   display: inline-block;
-  background-color: ${({ color }) => color || "black"};
+  background-color: ${({ color }) => isHexColor(color!) ? color : "#94a3b8"};
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 0.3rem;
@@ -99,7 +99,7 @@ const ButtonContainer = styled.button<ButtonProps>`
 
   ${({ size }) => sizes[size!] || sizes["md"]}
 
-  ${({ variant, color }) => setVariant(variant! || "solid", color)} 
+  ${({ variant, color }) => setVariant(variant! || "solid", isHexColor(color!) ? color : "#ffffff")} 
 
   ${({ isDisabled }) =>
     isDisabled &&
@@ -154,7 +154,7 @@ const ButtonSlider = styled.span<ToggleProps>`
 
   ${({ color }) => css`
     ${ButtonState}:checked ~ & {
-      background-color: ${color};
+      background-color: ${isHexColor(color!) ? color : "#94a3b8"};
     }
   `}
 
@@ -173,5 +173,10 @@ const FloatingButton = styled(ButtonContainer)`
   right: 1rem;
   z-index: 4;
 `;
+
+function isHexColor(color: string): boolean {
+  const hexColorRegex = /^#?([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$/;
+  return hexColorRegex.test(color);
+}
 
 export { ButtonContainer, ToggleContainer, ButtonState, ButtonSlider, FloatingButton };

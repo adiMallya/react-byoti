@@ -28,6 +28,7 @@ const sizeStyles = {
 };
 
 export const HeadingContainer = styled.h2<HeadingProps>`
+    margin: 0.625rem 0;
     line-height: 1.2;
     word-break: normal;
     font-weight: 600;
