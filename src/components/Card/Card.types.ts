@@ -19,5 +19,5 @@ export interface CommonProps extends HtmlHTMLAttributes<HTMLDivElement> {
 
 export interface CardProps extends CommonProps {
     direction?: FlexType,
-    maxW?: number
+    maxw?: number
 };

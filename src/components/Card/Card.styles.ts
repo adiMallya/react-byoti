@@ -12,8 +12,8 @@ const CardContainer = styled.div<CardProps>`
     background-color: ${({ theme }) => theme.secondary || '#ffffff'};
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.06);
 
-    ${({ maxW }) => maxW && css`
-        max-width: ${maxW}rem;
+    ${({ maxw }) => maxw && css`
+        max-width: ${maxw}rem;
     `};
 
     ${({ bg }) => bg && css`
