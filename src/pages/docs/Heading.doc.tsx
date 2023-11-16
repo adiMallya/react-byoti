@@ -4,7 +4,7 @@ import { DocLayout } from "src/documentation/components";
 import doc from "src/documentation/configs/heading.doc.json";
 
 import * as S from "src/pages/styles";
-import { Heading } from "src/components";
+import { Heading, sizeType } from "src/components";
 
 export const HeadingDoc = (): JSX.Element => {
   useEffect(() => {
@@ -35,8 +35,8 @@ export const HeadingDoc = (): JSX.Element => {
                 )}
               </p>
               <S.ComponentDisplay column="true">
-                {examples.map(({ text, ...props }) => (
-                    <Heading {...props}>{text}</Heading>
+                {examples.map(({ text, size, ...props }) => (
+                  <Heading size={size as sizeType} {...props}>{text}</Heading>
                 ))}
               </S.ComponentDisplay>
               <h4>Usage</h4>
@@ -63,8 +63,8 @@ export const HeadingDoc = (): JSX.Element => {
                 )}
               </p>
               <S.ComponentDisplay column>
-                {examples.map(({ text, ...props }) => (
-                    <Heading {...props}>{text}</Heading>
+                {examples.map(({ text, size, ...props }) => (
+                    <Heading size={size as sizeType} {...props}>{text}</Heading>
                 ))}
               </S.ComponentDisplay>
               <h4>Usage</h4>
