@@ -38,7 +38,7 @@ export const TextContainer = styled.p<TextProps>`
     `}
 
     ${({ fontWeight }) => css`
-        font-weight: ${fontWeight || 300};
+        font-weight: ${fontWeight || 500};
     `}
     
     ${({ color }) => isHexColor(color!) && css`
