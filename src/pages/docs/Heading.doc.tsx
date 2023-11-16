@@ -34,7 +34,7 @@ export const HeadingDoc = (): JSX.Element => {
                     .join(" ")
                 )}
               </p>
-              <S.ComponentDisplay column>
+              <S.ComponentDisplay column="true">
                 {examples.map(({ text, ...props }) => (
                     <Heading {...props}>{text}</Heading>
                 ))}

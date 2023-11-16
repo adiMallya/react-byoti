@@ -11,7 +11,7 @@ const Section = styled.section`
   }
 `;
 
-const ComponentDisplay = styled.article<{ column?: boolean }>`
+const ComponentDisplay = styled.article<{ column?: boolean | 'true' | 'false' }>`
   display: flex;
   flex-direction: ${({ column }) => column && 'column'};
   gap: 1rem;

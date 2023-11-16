@@ -62,7 +62,7 @@ export const ImageDoc = (): JSX.Element => {
                     .join(" ")
                 )}
               </p>
-              <S.ComponentDisplay column>
+              <S.ComponentDisplay column="true">
                 {examples.map((props) => (
                     <Image {...props} />
                 ))}

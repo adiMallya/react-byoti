@@ -34,7 +34,7 @@ export const AlertDoc = (): JSX.Element => {
                     .join(" ")
                 )}
               </p>
-              <S.ComponentDisplay column>
+              <S.ComponentDisplay column="true">
                 {examples.map(({ type, message }) => (
                   <Alert type={type} message={message} />
                 ))}

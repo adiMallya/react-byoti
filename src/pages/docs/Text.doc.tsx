@@ -34,7 +34,7 @@ export const TextDoc = (): JSX.Element => {
                     .join(" ")
                 )}
               </p>
-              <S.ComponentDisplay column>
+              <S.ComponentDisplay column="true">
                 {examples.map(({ text, ...props }) => (
                     <Text {...props}>{text}</Text>
                 ))}
@@ -62,7 +62,7 @@ export const TextDoc = (): JSX.Element => {
                     .join(" ")
                 )}
               </p>
-              <S.ComponentDisplay column>
+              <S.ComponentDisplay column="true">
                 {examples.map(({ text, ...props }) => (
                     <Text {...props}>{text}</Text>
                 ))}
