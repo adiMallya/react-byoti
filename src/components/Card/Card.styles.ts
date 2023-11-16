@@ -44,6 +44,14 @@ const CardContainer = styled.div<CardProps>`
             `;
         }
     }}
+    
+    ${({ spacing }) => spacing && css`
+        gap: ${spacing}rem;
+    `};
+
+    ${({ justify }) => justify && css`
+        justify-content: space-${justify};
+    `};
 `;
 
 const CardHeaderContainer = styled.div<CommonProps>`
