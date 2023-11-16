@@ -4,7 +4,7 @@ import { DocLayout } from "src/documentation/components";
 import doc from "src/documentation/configs/avatar.doc.json";
 
 import * as S from "src/pages/styles";
-import { Avatar } from "src/components";
+import { Avatar, AvatarSizeType } from "src/components";
 
 export const AvatarDoc = (): JSX.Element => {
   useEffect(() => {
@@ -35,8 +35,8 @@ export const AvatarDoc = (): JSX.Element => {
                 )}
               </p>
               <S.ComponentDisplay>
-                {examples.map((props, index) => (
-                  <Avatar {...props} key={index}/>
+                {examples.map(({ size, ...props }, index) => (
+                  <Avatar size={size as AvatarSizeType} {...props} key={index}/>
                 ))}
               </S.ComponentDisplay>
               <h4>Usage</h4>

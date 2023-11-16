@@ -4,7 +4,7 @@ import { DocLayout } from "src/documentation/components";
 import doc from "src/documentation/configs/alert.doc.json";
 
 import * as S from "src/pages/styles";
-import { Alert } from "src/components";
+import { Alert, AlertVariantType } from "src/components";
 
 export const AlertDoc = (): JSX.Element => {
   useEffect(() => {
@@ -36,7 +36,7 @@ export const AlertDoc = (): JSX.Element => {
               </p>
               <S.ComponentDisplay column="true">
                 {examples.map(({ type, message }) => (
-                  <Alert type={type} message={message} />
+                  <Alert type={type as AlertVariantType} message={message as string} />
                 ))}
               </S.ComponentDisplay>
               <h4>Usage</h4>
