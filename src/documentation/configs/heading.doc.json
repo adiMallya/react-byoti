@@ -45,6 +45,7 @@
             ],
             "examples": [
                 {
+                    "size": "xl",
                     "text": "I love byoti",
                     "color": "#16a34a"
                 },
