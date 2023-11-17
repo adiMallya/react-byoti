@@ -34,4 +34,15 @@ const Code = styled.code`
   }
 `;
 
-export { Section, ComponentDisplay, Code };
+// Home page
+const HomeSection = styled.section`
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media screen and (min-width: 768px){
+    grid-template-columns: 50% 50%;
+    padding: 0 1.75rem;
+  }
+`;
+
+export { Section, ComponentDisplay, Code, HomeSection };

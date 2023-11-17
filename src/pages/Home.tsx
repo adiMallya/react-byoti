@@ -1,6 +1,8 @@
 import { useEffect } from "react";
-
+import { MainContent } from "src/documentation/components/DocLayout/styles";
 import { Navbar, Footer } from "src/documentation/components";
+import * as S from "./styles";
+import { Heading, Text, Button, Image} from "src/components";
 
 export const Home = (): JSX.Element => {
   useEffect(() => {
@@ -10,6 +12,23 @@ export const Home = (): JSX.Element => {
   return (
     <>
       <Navbar />
+      <MainContent>
+        <S.HomeSection>
+          <S.Section>
+            <Heading size="xl">Create byoti<i>ful</i> React apps faster</Heading>
+            <Text fontSize="lg" fontWeight={400}>
+              byoti UI provides simple and accessible building blocks to build your React applications.
+            </Text>
+            <div style={{"display": "flex" ,"gap": "1rem"}}>
+              <Button as="a" size="md" variant="outline" color="#BE185D" label="Get Started"  href="/#"/>
+              <Button as="a" size="md" variant="solid" color="#BE185D" label="Documentation" href="/docs/alert"/>
+            </div>
+          </S.Section>
+          <S.Section style={{"padding": "1rem"}}>
+            <Image src="/src/assets/hero_banner.svg" alt="Hero Image" />
+          </S.Section>
+        </S.HomeSection>
+      </MainContent>
       <Footer />
     </>
   );
