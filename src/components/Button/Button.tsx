@@ -9,11 +9,12 @@ import {
 
 export const Button: React.FC<ButtonProps> = ({
   children,
+  as,
   ...rest
 }): JSX.Element => {
   const { label } = rest;
   return (
-    <ButtonContainer {...rest}>
+    <ButtonContainer {...rest} as={as}>
       <span aria-label="button-label">
         {children}
         <span>{label}</span>
