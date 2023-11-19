@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { MainContent } from "src/documentation/components/DocLayout/styles";
 import { Navbar, Footer } from "src/documentation/components";
 import * as S from "./styles";
-import { Heading, Text, Button, Image} from "src/components";
+import { Heading, Text, Button, Image } from "src/components";
+import hero from "src/assets/hero_banner.svg";
 
 export const Home = (): JSX.Element => {
   useEffect(() => {
@@ -25,7 +26,7 @@ export const Home = (): JSX.Element => {
             </div>
           </S.Section>
           <S.Section style={{"padding": "1rem"}}>
-            <Image src="/src/assets/hero_banner.svg" alt="Hero Image" />
+            <Image src={hero} alt="Hero Image" />
           </S.Section>
         </S.HomeSection>
       </MainContent>
