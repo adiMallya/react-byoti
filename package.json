@@ -1,8 +1,16 @@
 {
   "name": "react-byoti",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A react component library",
+  "author": "adiMallya",
+  "license": "Apache-2.0",
+  "repository": "adiMallya/react-byoti",
   "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -17,11 +25,12 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "html-react-parser": "^4.2.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react-dom": "18.2.0",
     "react-router-dom": "^6.15.0",
     "styled-components": "^6.0.7"
   },
   "devDependencies": {
+    "@types/json-schema": "^7.0.15",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@types/react-router-dom": "^5.3.3",
