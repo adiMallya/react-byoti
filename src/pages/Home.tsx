@@ -20,8 +20,8 @@ export const Home = (): JSX.Element => {
               byoti UI provides simple and accessible building blocks to build your React applications.
             </Text>
             <div style={{"display": "flex" ,"gap": "1rem"}}>
-              <Button as="a" size="md" variant="outline" color="#BE185D" label="Get Started"  href="/#"/>
-              <Button as="a" size="md" variant="solid" color="#BE185D" label="Documentation" href="/docs/alert"/>
+              <Button as="a" size="md" variant="outline" color="#BE185D" label="Get Started"  href="/docs/alert"/>
+              {/* <Button as="a" size="md" variant="solid" color="#BE185D" label="Documentation" href="/docs/alert"/> */}
             </div>
           </S.Section>
           <S.Section style={{"padding": "1rem"}}>
