@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Section = styled.section`
   display: flex;
@@ -35,13 +35,25 @@ const Code = styled.code`
 `;
 
 // Home page
-const HomeSection = styled.section`
+const HomeSection = styled.section<{ center?: string | boolean }>`
   display: grid;
   grid-template-columns: 1fr;
+
+  ${({ center }) => center === 'true' && css`
+    place-items: center;
+    
+    >*{
+      text-align: center;
+    }
+  `}
 
   @media screen and (min-width: 768px){
     grid-template-columns: 50% 50%;
     padding: 0 1.75rem;
+
+    ${({ center }) => center === 'true' && css`
+      grid-template-columns: 1fr;
+    `}
   }
 `;
 
