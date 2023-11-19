@@ -25,7 +25,7 @@ export const Home = (): JSX.Element => {
             </Text>
             <div style={{"display": "flex" ,"gap": "1rem"}}>
               <Button size="md" variant="outline" color="#BE185D" label="Get Started" onClick={() => navigate('/docs/alert')} />
-              {/* <Button as="a" size="md" variant="solid" color="#BE185D" label="Documentation" href="/docs/alert"/> */}
+              {/* <Button size="md" variant="solid" color="#BE185D" label="Documentation"/> */}
             </div>
           </S.Section>
           <S.Section style={{"padding": "1rem"}}>
