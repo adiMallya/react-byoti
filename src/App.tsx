@@ -1,7 +1,7 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
-import { Home, AlertDoc, AvatarDoc, BadgeDoc, ButtonDoc, CardDoc, HeadingDoc, ImageDoc, TextDoc } from "src/pages";
+import { Home, AlertDoc, AvatarDoc, BadgeDoc, ButtonDoc, CardDoc, HeadingDoc, ImageDoc, TextDoc, NotFoundPage } from "src/pages";
 import { useTheme } from "src/context/ThemeContext";
 import { GlobalStyles, lightTheme, darkTheme } from "./styles";
 
@@ -20,7 +20,9 @@ function App(): JSX.Element {
         <Route path="/docs/card" element={<CardDoc/>}/>
         <Route path="/docs/heading" element={<HeadingDoc />} />
         <Route path="/docs/image" element={<ImageDoc/>} />
-        <Route path="/docs/text" element={<TextDoc/>}/>
+        <Route path="/docs/text" element={<TextDoc />} />
+        <Route path="/docs" element={<Navigate to={"/docs/alert"} />} />
+        <Route path="*" element={<NotFoundPage/>} />
       </Routes>
     </ThemeProvider>
   );
