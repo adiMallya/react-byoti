@@ -6,9 +6,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     size?: 'lg' | 'md' | 'sm',
     variant?: 'solid' | 'outline' | 'link' | 'icon' | 'iconText',
     isDisabled?: boolean,
-    children?: ReactNode,
-    as?: 'a',
-    [key: string]: any
+    children?: ReactNode
 }
 
 export interface ToggleProps extends HtmlHTMLAttributes<HTMLElement> {
