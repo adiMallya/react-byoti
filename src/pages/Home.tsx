@@ -4,8 +4,11 @@ import { Navbar, Footer } from "src/documentation/components";
 import * as S from "./styles";
 import { Heading, Text, Button, Image } from "src/components";
 import hero from "src/assets/hero_banner.svg";
+import { useNavigate } from "react-router-dom";
 
 export const Home = (): JSX.Element => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     document.title = "byoti UI";
   }, []);
@@ -21,7 +24,7 @@ export const Home = (): JSX.Element => {
               byoti UI provides simple and accessible building blocks to build your React applications.
             </Text>
             <div style={{"display": "flex" ,"gap": "1rem"}}>
-              <Button as="a" size="md" variant="outline" color="#BE185D" label="Get Started"  href="/docs/alert"/>
+              <Button size="md" variant="outline" color="#BE185D" label="Get Started" onClick={() => navigate('/docs/alert')} />
               {/* <Button as="a" size="md" variant="solid" color="#BE185D" label="Documentation" href="/docs/alert"/> */}
             </div>
           </S.Section>
